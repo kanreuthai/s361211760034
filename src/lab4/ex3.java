@@ -19,10 +19,11 @@ public class ex3 {
         else if (score <=100)System.out.println("Your grade is A.");
         else System.out.println("กรุณากรอกค่าคะแนนให้ถูกต้อง");
 
-
-
-
-
-
     }//main
 }//class
+
+
+
+
+
+
