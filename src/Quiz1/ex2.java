@@ -28,6 +28,8 @@ public class ex2 {
             case 3: System.out.println("คุณเสียภาษี 17 % ของราคาสินค้า");break;
             case 4: System.out.println("คุณเสียภาษี 40 % ของราคาสินค้า");break;
         }//switch-case
+
+    }//switch-case
     }//main
-}//class
+
 
