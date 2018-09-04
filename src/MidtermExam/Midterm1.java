@@ -42,5 +42,5 @@ public class Midterm1 {
         System.out.println(v);
         System.out.println(n/v);
 
-    }//main
-}//class
+    }
+}
