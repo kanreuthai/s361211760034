@@ -1,6 +1,4 @@
-package lab4;
-
-        import com.sun.xml.internal.bind.util.Which;
+package lab3;
 
         import java.util.Scanner;
 

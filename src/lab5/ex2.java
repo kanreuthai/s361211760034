@@ -1,33 +1,79 @@
 package lab5;
-// get data as Integer 2 values from user
-// process with method following:
-//1.summation;
-//2.sub
+
 import java.util.Scanner;
 
+//1. create method to find maximum data
+//2. create method to find minimum data
+//3. create method to find average value
+//4. create method to sort data in array  (low-high)****
+
+import java.util.Arrays;
+
 public class ex2 {
-    public static void  main (String[]args){
-        Scanner sc =new Scanner(System.in);
-        int num1,num2;
-      System.out.print("Enter an integer 1: ");
-      num1 =sc.nextInt();
-        System.out.print("Enter an integer 2: ");
-        num2 =sc.nextInt();
-        System.out.println("The summtion is:"+summation(num1,num2));
-        System.out.println("The subtraction is:"+subtraction(num1,num2));
-        System.out.println("The multiple is:"+ multiple(num1,num2));
-        System.out.println("The divide is:"+divide(num1,num2));
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        int[] num = new int[5];  //default = 0
+
+        System.out.println("Please, input integers to array.");
+        //input
+        for (int i = 0; i < num.length; i++) {
+            System.out.print("Enter integer "+(i+1)+":");
+            num[i] = scanner.nextInt();
+        }
+        showData(num);
+        findMax(num);
+        findMin(num);
+        findAverage(num);
+        sortData(num);
+
+    }//main
+
+    private static void sortData(int[] num) {
+        Arrays.sort(num);
+        System.out.println();
+        showData(num);
+
     }
-    public static int summation (int x,int y){
-        return x+y;
+
+    private static void findAverage(int[] num) {
+        int sum = 0;
+        for (int i = 0; i < num.length; i++) {
+            sum += num[i];  // sum = sum+num[i];
+
+        }//loop
+        System.out.println("The average value is "+(sum/num.length));
+
     }
-    public static int subtraction(int x,int y){
-        return x-y;
+
+    private static void findMax(int[] num) {
+        int max = num[0];
+        for (int i = 0; i < num.length; i++) {
+            if (max <= num[i]) {
+                max = num[i];
+            }
+        }//loop
+        System.out.println();
+        System.out.println("The maximum value is " + max);
     }
-    public static int multiple(int x,int y){
-        return x*y;
+    private static void findMin(int[] num) {
+        int min = num[0];
+        for (int i = 0; i < num.length; i++) {
+            if (min >= num[i]) {
+                min = num[i];
+            }
+        }//loop
+        System.out.println("The minimum value is " + min);
     }
-    public static int divide (int x,int y){
-        return x/y;
+
+
+
+    private static void showData(int[] num) {
+        for (int val : num) {
+            System.out.print(val+"  ");
+        }
     }
-}
+
+
+}//class

@@ -1,35 +1,17 @@
 package lab5;
 
 public class ex1 {
-    public static void B(String msg) {
-        System.out.println("Hello B" + msg);
-    }//B
-
-    public static void main(String[] args) {
-        System.out.println("Hello Main");
-        //calling A()
-        A();
-        A();
-    //calling B()
-
-    B("JAN");
-    //calling C()
-        int result =C(10,10);
-        System.out.println(result);
-        System.out.println(C(10,10));
+    public static void main(String[] args){
+        int number [];
+        number = new int[5];
+        System.out.println(number[0]);
+        System.out.println(number[1]);
+        System.out.println(number[2]);
+        System.out.println(number[3]);
+        System.out.println(number[4]);
+        number[3]=100;
+        number[1]=number[3]*3;
 
 
-}//main
-    public static void A () {
-        System.out.println("Hello A");
-    }//A
-    public static  int C(int x,int y){
-       System.out.println("Hello C");
-       int sum = x+y;
-       return sum;
-    }//c
-
-}//class
-
-
-
+}
+}

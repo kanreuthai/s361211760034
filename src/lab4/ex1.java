@@ -1,13 +1,35 @@
 package lab4;
 
 public class ex1 {
+    public static void B(String msg) {
+        System.out.println("Hello B" + msg);
+    }//B
+
     public static void main(String[] args) {
-        int x = 20;
-        if (x >= 30) {
-            System.out.println("x มากกว่า 20");
-        } else {
-            System.out.println("x น้อยกว่า 20");
-        }
-        System.out.println("Thank You.");
-    }//main
+        System.out.println("Hello Main");
+        //calling A()
+        A();
+        A();
+    //calling B()
+
+    B("JAN");
+    //calling C()
+        int result =C(10,10);
+        System.out.println(result);
+        System.out.println(C(10,10));
+
+
+}//main
+    public static void A () {
+        System.out.println("Hello A");
+    }//A
+    public static  int C(int x,int y){
+       System.out.println("Hello C");
+       int sum = x+y;
+       return sum;
+    }//c
+
 }//class
+
+
+
