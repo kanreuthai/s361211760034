@@ -10,6 +10,8 @@ public class StudentApp {
 
    System.out.println(std.toString());
 
+    std.setName("kanreuthai");
+    System.out.println(std.toString());
     }
 
 }//class
