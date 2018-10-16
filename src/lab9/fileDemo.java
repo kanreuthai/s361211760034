@@ -28,7 +28,7 @@ public class fileDemo {
             FileReader reader =new FileReader("D:\\s361211760034\\src\\lab9\\mit.txt");
                     int i;
             while ((i=reader.read())!=-1) {
-                System.out.println( (char)i);
+                System.out.print( (char)i);
             }
             reader.close();
             } catch (FileNotFoundException e) {
